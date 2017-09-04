@@ -25,8 +25,8 @@ class Element {
     }
     // 递归子元素
     children.forEach(child => {
-      let chilEle = child instanceof Element ? child.render() : document.createTextNode(child)
-      el.appendChild(chilEle)
+      let childEle = child instanceof Element ? child.render() : document.createTextNode(child)
+      el.appendChild(childEle)
     })
     return el
   }
